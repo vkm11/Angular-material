@@ -1,3 +1,62 @@
+## Install material ui
+  search in google angular material
+  
+ # Install Angular Material:- 
+ 
+ you can install this in your project file
+  
+  in terminal window:-
+ 
+ 	ng add @angular/material
+ 	
+ 	
+# IMP:-
+	When you need add material then its required to import the module IN app.module.ts
+ 	
+app.module.ts
+import { MatSliderModule } from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatBadgeModule} from '@angular/material/badge';
+
+
+
+and you cand imports:
+    MatSliderModule,
+    MatButtonModule,
+    MatBadgeModule
+    
+    like this:
+
+#app.module.ts
+    
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatBadgeModule} from '@angular/material/badge';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatButtonModule,
+    MatBadgeModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
 # AngularMaterial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
